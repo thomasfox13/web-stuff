@@ -1,0 +1,12 @@
+div {
+	background: #fff;
+	border: 6px solid #ccc;
+	height: 20px;
+	margin: 20px;
+	padding: 20px;
+	width: 400px;
+}
+
+#boxes {
+	border: 6px solid #aaa;
+}

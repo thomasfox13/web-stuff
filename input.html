@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Stuff!</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+	var number_of_messages = 0;
+
+	function rand( min, max ) {
+		return Math.floor(Math.random() * (max - min + 1) + min);
+	}
+
+	function writeMessage( text ) {
+		number_of_messages += 1;
+		var message = document.createElement('p');
+		message.id = "message" + number_of_messages.toString();
+		message.textContent = text;
+		document.body.appendChild( message );
+	}
+
+	function evalForm( form ) {
+		writeMessage(form); 
+		return false;
+	}
+
+	$( "submit" ).click(function (event ) {
+		event.preventDefault();
+	});
+
+	</script>
+</head>
+<body>
+	<p>Welcome!</p>
+	<form onSubmit="evalForm()">
+		<input type="text">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
