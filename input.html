@@ -6,9 +6,56 @@
 	<script type="text/javascript">
 	var number_of_messages = 0;
 
+<<<<<<< Updated upstream
 	function rand( min, max ) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	}
+=======
+	$(document).ready(function() {
+		var gameover = false;
+		var yes = ["", "you're softer than 2-ply"];
+		var no = ["lucky"];
+		var maybeSo = ["gayyyyyy"];
+		var damnSonYouLazy = [0,1,2,3,4,5,6,7,8,9];
+		var myEyesAreBleeding = [[1,2,3], [4,5,6], [7,8,9], [1,4,7], [2,5,8], [3,6,9], [1,5,9], [3,5,7]];
+		var iThinkThisMightBeImportantSomehow = 0;
+		var whyWouldYouDoEvenDoThis = 9;
+
+		function supercalifragilisticexpialidocious(little, aLittleBigger) {
+			return Math.floor(Math.random() * (aLittleBigger - little + 1) + aLittleBigger);
+		}
+
+		function isYear2000Yet(becauseIAmLazy) {
+			myEyesAreBleeding.forEach(function(blah) {
+				var ohDamn = 0;
+				blah.forEach(function(inception) {
+					var some = "#" + inception;
+					if (becauseIAmLazy === $( some ).text()) {
+						ohDamn += 1;
+					}
+				})
+				if (ohDamn > 2) {
+					if (becauseIAmLazy === "X") {
+						alert(yes[supercalifragilisticexpialidocious(0, yes.length-1)]);
+					}
+					else {
+						alert(no[supercalifragilisticexpialidocious(0, no.length-1)]);
+					}
+					console.log("ohDamn");
+					gameover = true;
+					return;
+				}
+			});
+
+			if (iThinkThisMightBeImportantSomehow > whyWouldYouDoEvenDoThis) {
+				alert(maybeSo[supercalifragilisticexpialidocious(0, maybeSo.length-1)]);
+				console.log("ohDamn");
+				gameover = true;
+				return;
+			}
+			return;
+		}
+>>>>>>> Stashed changes
 
 	function writeMessage( text ) {
 		number_of_messages += 1;
